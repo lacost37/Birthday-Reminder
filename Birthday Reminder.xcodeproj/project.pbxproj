@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04A5D12C2923E620008FFB86 /* ViewControllerTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A5D12B2923E620008FFB86 /* ViewControllerTwo.swift */; };
 		04BFBBBA291E5EB4004E4ADA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BFBBB9291E5EB4004E4ADA /* AppDelegate.swift */; };
 		04BFBBBC291E5EB4004E4ADA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BFBBBB291E5EB4004E4ADA /* SceneDelegate.swift */; };
 		04BFBBBE291E5EB4004E4ADA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BFBBBD291E5EB4004E4ADA /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04A5D12B2923E620008FFB86 /* ViewControllerTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTwo.swift; sourceTree = "<group>"; };
 		04BFBBB6291E5EB4004E4ADA /* Birthday Reminder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Birthday Reminder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04BFBBB9291E5EB4004E4ADA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04BFBBBB291E5EB4004E4ADA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				04BFBBB9291E5EB4004E4ADA /* AppDelegate.swift */,
 				04BFBBBB291E5EB4004E4ADA /* SceneDelegate.swift */,
 				04BFBBBD291E5EB4004E4ADA /* ViewController.swift */,
+				04A5D12B2923E620008FFB86 /* ViewControllerTwo.swift */,
 				04BFBBBF291E5EB4004E4ADA /* Main.storyboard */,
 				04BFBBC2291E5EB6004E4ADA /* Assets.xcassets */,
 				04BFBBC4291E5EB6004E4ADA /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 				04BFBBBE291E5EB4004E4ADA /* ViewController.swift in Sources */,
 				04BFBBBA291E5EB4004E4ADA /* AppDelegate.swift in Sources */,
 				04BFBBBC291E5EB4004E4ADA /* SceneDelegate.swift in Sources */,
+				04A5D12C2923E620008FFB86 /* ViewControllerTwo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,6 +299,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -323,6 +328,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
