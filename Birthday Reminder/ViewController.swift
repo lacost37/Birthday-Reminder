@@ -43,6 +43,9 @@ class ViewController: UIViewController {
     
     
     @IBAction func signInAction(_ sender: Any) {
+        guard emailLabel.hasText && passLabel.hasText else { return alert(title: "Поле Email и Password не могут быть пустыми!", message: "", style: .alert) }
+        let newVC = storyboard?.instantiateViewController(withIdentifier: "ViewControllerTwo") as! ViewControllerTwo
+        navigationController?.pushViewController(newVC, animated: true)
         
     }
     
