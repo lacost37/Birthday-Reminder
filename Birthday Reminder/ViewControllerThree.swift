@@ -7,11 +7,14 @@
 
 import UIKit
 
-class ViewControllerThree: UIViewController {
+class ViewControllerThree: UIViewController, UITextFieldDelegate {
 
+    weak var delegate: ViewControllerTwo?
+    
     let picker = UIPickerView()
     let datePicker = UIDatePicker()
     let agePicker = UIPickerView()
+    
    
     @IBOutlet var nameField: UITextField!
     @IBOutlet var dateField: UITextField!
@@ -24,7 +27,7 @@ class ViewControllerThree: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // inst
-        
+        instField.delegate = self
         
         // gender
         picker.contentMode = .bottom
@@ -40,6 +43,7 @@ class ViewControllerThree: UIViewController {
         
         // date field
         datePicker.datePickerMode = .date
+        datePicker.preferredDatePickerStyle = .wheels
         dateField.inputView = datePicker
         let toolBar = UIToolbar()
         toolBar.sizeToFit()
@@ -69,7 +73,20 @@ class ViewControllerThree: UIViewController {
         self.dismiss(animated: true)
     }
     
-    @IBAction func instFieldAction(_ sender: Any) {
+    @IBAction func addButtonAction(_ sender: Any) {
+        delegate?.update(name: nameField.text!, age: ageField.text!)
+        delegate?.nameFromThree.isHidden = false
+        delegate?.textFromThree.isHidden = false
+        dismiss(animated: true)
+        
+       
+    }
+    
+    
+    // function
+    
+    // функция отвечает за реагирование на нажатие на текст филд
+    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
         let alertController = UIAlertController(title: "Ведите инстаграм:", message: "", preferredStyle: .alert)
         let action = UIAlertAction(title: "Ок", style: .default) { (action) in
             let textField = alertController.textFields![0]
@@ -84,8 +101,9 @@ class ViewControllerThree: UIViewController {
         
         self.present(alertController, animated: true)
         
+        return false
     }
-    // function
+    
     @objc func doneAction() {
         getDateFromPicker()
         view.endEditing(true)
@@ -95,9 +113,6 @@ class ViewControllerThree: UIViewController {
         view.endEditing(true)
     }
     
-    func alert() {
-        
-    }
     
     // получаем дату
     func getDateFromPicker() {
